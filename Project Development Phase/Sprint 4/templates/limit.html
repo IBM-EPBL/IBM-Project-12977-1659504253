@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %} 
+
+<center><div style="margin-top: 200px;">
+    <p> {{y}} </p>
+<form action="/limitnum" method="POST">
+
+    <p> ENTER the MONTHLY LIMIT to avoid over EXPENSES</p> <br/>
+    <input type="number" name="number" required/> <span> 
+        <button class="btn btn-warning" type="submit">ENTER</button>
+    </span>
+
+
+</form>
+</div>
+</center>
+{% endblock %}
